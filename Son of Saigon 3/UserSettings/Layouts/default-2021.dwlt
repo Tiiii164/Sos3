@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 81
+  controlID: 27
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 362.40002
     height: 722.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 290.4
     height: 428
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -318,22 +318,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/EnemyScripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/EnemyScripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Sos3\Son of Saigon 3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: bab30000
-    m_LastClickedID: 46010
-    m_ExpandedIDs: 00000000aeb30000bab30000
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: a6b00000
+    m_LastClickedID: 45222
+    m_ExpandedIDs: 00000000d87a000042920000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000d87a0000da7a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -491,25 +491,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 806fffff307affffd2bdfffffac5fffffec5ffff06c6ffffc0c7ffff62f10000
+      m_SelectedIDs: accfffff
+      m_LastClickedID: -12372
+      m_ExpandedIDs: a0cfffffa4cfffff66d1ffff06dfffffaae7ffff7cefffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Greybox
+        m_OriginalName: Greybox
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -12380
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -776,9 +776,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.4148287, y: -2.4595218, z: 2.0803359}
+    m_Target: {x: -3.0859513, y: -2.238966, z: 23.763664}
     speed: 2
-    m_Value: {x: 1.4148287, y: -2.4595218, z: 2.0803359}
+    m_Value: {x: -3.0859513, y: -2.238966, z: 23.763664}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -825,13 +825,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.20288463, y: -0.008229458, z: 0.0017051527, w: 0.97916836}
+    m_Target: {x: -0.36089808, y: 0.20079093, z: -0.07987608, w: -0.9072313}
     speed: 2
-    m_Value: {x: 0.20582087, y: -0.008224291, z: 0.0017298305, w: 0.97855365}
+    m_Value: {x: -0.36089572, y: 0.20078962, z: -0.07987556, w: -0.9072253}
   m_Size:
-    m_Target: 2.0731566
+    m_Target: 9.3284645
     speed: 2
-    m_Value: 1.983882
+    m_Value: 9.3284645
   m_Ortho:
     m_Target: 0
     speed: 2
