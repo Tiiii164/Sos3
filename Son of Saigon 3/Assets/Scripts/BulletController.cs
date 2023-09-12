@@ -20,7 +20,7 @@ namespace CodeMonkey.HealthSystemCM
         void Start()
         {
             characterStats = CharacterStats.Instance;
-            bulletRigidbody.velocity = transform.forward * bulletSpeed;
+            bulletRigidbody.velocity = transform.up * bulletSpeed;
           
         }
 
