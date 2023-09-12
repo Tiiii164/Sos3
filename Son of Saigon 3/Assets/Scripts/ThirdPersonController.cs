@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -106,8 +108,16 @@ namespace StarterAssets
         private Animator _animator;
         private CharacterController _controller;
         private StarterAssetsInputs _input;
+        private ThirdPersonShooterController _thirdPersonShooterController;
         private GameObject _mainCamera;
         private bool _rotateOnMove = true;
+        public List<GameObject> weapons;
+        private int selectedWeapon = 0;
+        private bool isRolling = false;
+        public float rollDuration = 1.5f;
+        public float rollSpeed = 20.0f;
+        public bool hasRife = true;
+        public bool hasPistol = false;
 
         private const float _threshold = 0.01f;
 
@@ -138,7 +148,7 @@ namespace StarterAssets
         private void Start()
         {
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
-            
+            _thirdPersonShooterController = GetComponent<ThirdPersonShooterController>();
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
@@ -147,7 +157,8 @@ namespace StarterAssets
 #else
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
-
+            selectedWeapon = 0;
+            SelectWeapon();
             AssignAnimationIDs();
 
             // reset our timeouts on start
@@ -162,6 +173,7 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+            SwitchWeapon();
         }
 
         private void LateUpdate()
@@ -403,6 +415,77 @@ namespace StarterAssets
         public void SetRotateOnMove(bool newRotateOnMove)
         {
             _rotateOnMove = newRotateOnMove;
+        }
+
+        public void SwitchWeapon()
+        {
+            int previousSelectedWeapon = selectedWeapon;
+            if(Input.GetKeyDown(KeyCode.Alpha1) && hasPistol)
+            {
+                selectedWeapon = 0;
+                hasPistol = false;
+                hasRife = true;
+                _animator.SetBool("IsRife", true);
+                _animator.SetBool("IsPistol", false);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2) && transform.childCount >= 2 && hasRife)
+            {
+                selectedWeapon = 1;
+                hasPistol = true;
+                hasRife = false;
+                _animator.SetBool("IsRife", false);
+                _animator.SetBool("IsPistol", true);
+            }
+            if (previousSelectedWeapon != selectedWeapon)
+            {
+                SelectWeapon();
+            }
+        }
+
+        public void SelectWeapon()
+        {
+            foreach (GameObject weapon in weapons)
+            {
+                weapon.SetActive(false);
+            }
+
+            if (selectedWeapon >= 0 && selectedWeapon < weapons.Count)
+            {
+                weapons[selectedWeapon].SetActive(true);
+            }
+        }
+        
+        public void Roll()
+        {
+            if (Input.GetKeyDown(KeyCode.LeftControl) && !isRolling && Grounded)
+            {
+                StartCoroutine(StartRoll());
+                _animator.SetBool("IsRoll", true);
+            }
+        }
+
+        private IEnumerator StartRoll()
+        {
+            isRolling = true;
+
+            // Tạo một biến để lưu trữ thời gian cần lăn.
+            float rollTime = 0.0f;
+
+            // Lăn trong thời gian được chỉ định.
+            while (rollTime < rollDuration)
+            {
+                // Di chuyển người chơi theo hướng lăn.
+                Vector3 rollDirection = transform.forward; // Ví dụ: lăn theo hướng trước của người chơi.
+                transform.position += rollDirection * rollSpeed * Time.deltaTime;
+
+                // Cập nhật thời gian đã lăn.
+                rollTime += Time.deltaTime;
+
+                yield return null;
+            }
+
+            isRolling = false;
+            _animator.SetBool("IsRoll", false);
         }
     }
 }
