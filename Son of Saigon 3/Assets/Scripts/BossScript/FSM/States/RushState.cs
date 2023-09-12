@@ -21,7 +21,7 @@ namespace LlamAcademy.FSM
 
         public override void OnLogic()
         {
-            Agent.Move(15f * Agent.speed * Time.deltaTime * Agent.transform.forward);
+            Agent.Move(2f * Agent.speed * Time.deltaTime * Agent.transform.forward);
             base.OnLogic();
         }
     }

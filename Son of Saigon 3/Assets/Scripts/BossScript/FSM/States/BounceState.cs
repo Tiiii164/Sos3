@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 
 namespace LlamAcademy.FSM
+
 {
     public class BounceState : EnemyStateBase
     {
@@ -22,8 +23,10 @@ namespace LlamAcademy.FSM
         {
             Agent.isStopped = true;
             base.OnEnter();
-            Animator.Play("Bounce Attack");
+            Animator.Play("Bounce Attack"); 
             BounceParticleSystem.Play();
         }
     }
 }
+
+

@@ -13,6 +13,7 @@ namespace LlamAcademy.FSM
         public override void OnEnter()
         {
             Agent.isStopped = true;
+            Agent.speed = 0;
             base.OnEnter();
             Animator.Play("Spit Attack");
             Pool.Get();
@@ -22,7 +23,7 @@ namespace LlamAcademy.FSM
             Enemy Enemy, 
             Spit Prefab, 
             Action<State<EnemyState, StateEvent>> onEnter,
-            float ExitTime = 1.2f) : base(needsExitTime, Enemy, ExitTime, onEnter)
+            float ExitTime = 1.3f) : base(needsExitTime, Enemy, ExitTime, onEnter)
         {
             this.Prefab = Prefab;
             Pool = new(CreateObject, GetObject, ReleaseObject);

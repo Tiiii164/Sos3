@@ -21,7 +21,7 @@ namespace LlamAcademy
 
             yield return null;
 
-            Rigidbody.AddForce(transform.forward * Force);
+            //Rigidbody.AddForce(transform.forward * Force);
 
             yield return Wait;
             gameObject.SetActive(false);
