@@ -15,7 +15,7 @@ C:/Sos3/Son of Saigon 3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54669
+62767
 Successfully changed project path to: C:/Sos3/Son of Saigon 3
 C:/Sos3/Son of Saigon 3
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Sos3/Son of Saigon 3
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [5136] Host "[IP] 26.188.60.191 [Port] 0 [Flags] 2 [Guid] 2619679621 [EditorId] 2619679621 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-JOB4D2PO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10536] Host "[IP] 26.188.60.191 [Port] 0 [Flags] 2 [Guid] 4159172790 [EditorId] 4159172790 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-JOB4D2PO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [5136] Host "[IP] 26.188.60.191 [Port] 0 [Flags] 2 [Guid] 2619679621 [EditorId] 2619679621 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-JOB4D2PO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10536] Host "[IP] 26.188.60.191 [Port] 0 [Flags] 2 [Guid] 4159172790 [EditorId] 4159172790 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-JOB4D2PO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 152.04 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 429.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -67,52 +67,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.010757 seconds.
+Registered in 0.011498 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 330 ms
+Android Extension - Scanning For ADB Devices 345 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 197.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 201.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.535 seconds
+- Completed reload, in  1.770 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1537ms)
-		BeginReloadAssembly (192ms)
+	ReloadAssembly (1771ms)
+		BeginReloadAssembly (283ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (1187ms)
-			LoadAssemblies (186ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1209ms)
+			LoadAssemblies (283ms)
 			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (220ms)
+			SetupTypeCache (193ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (845ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (870ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (428ms)
+				InitializePlatformSupportModulesInManaged (453ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (198ms)
-				BeforeProcessingInitializeOnLoad (4ms)
-				ProcessInitializeOnLoadAttributes (145ms)
-				ProcessInitializeOnLoadMethodAttributes (70ms)
+				RefreshPlugins (202ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012765 seconds.
+Registered in 0.009052 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -120,46 +120,46 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 177.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 395.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.699 seconds
+- Completed reload, in  5.780 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2700ms)
-		BeginReloadAssembly (188ms)
+	ReloadAssembly (5781ms)
+		BeginReloadAssembly (182ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (2340ms)
-			LoadAssemblies (243ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (5332ms)
+			LoadAssemblies (456ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (620ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (153ms)
-			SetupLoadedEditorAssemblies (1226ms)
+			SetupTypeCache (1881ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (344ms)
+			SetupLoadedEditorAssemblies (2371ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (32ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (178ms)
-				BeforeProcessingInitializeOnLoad (279ms)
-				ProcessInitializeOnLoadAttributes (611ms)
-				ProcessInitializeOnLoadMethodAttributes (118ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
+				InitializePlatformSupportModulesInManaged (64ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (396ms)
+				BeforeProcessingInitializeOnLoad (256ms)
+				ProcessInitializeOnLoadAttributes (1336ms)
+				ProcessInitializeOnLoadMethodAttributes (298ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 4.26 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 9.00 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5392 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 48 unused Assets / (0.8 MB). Loaded Objects now: 5848.
-Memory consumption went from 218.2 MB to 217.4 MB.
-Total: 8.843900 ms (FindLiveObjects: 1.075700 ms CreateObjectMapping: 0.908900 ms MarkObjects: 6.119400 ms  DeleteObjects: 0.738400 ms)
+Memory consumption went from 218.1 MB to 217.4 MB.
+Total: 66.789800 ms (FindLiveObjects: 17.884600 ms CreateObjectMapping: 13.658900 ms MarkObjects: 34.455700 ms  DeleteObjects: 0.787300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -174,14 +174,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 15752.953145 seconds.
-  path: Assets/Scripts/ThirdPersonController.cs
-  artifactKey: Guid(26e54e5a728a9234ab24fcf1460ed8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ThirdPersonController.cs using Guid(26e54e5a728a9234ab24fcf1460ed8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce104605c85a5168832d575d4d29acf5') in 0.047826 seconds 
+  Time since last request: 294577.104849 seconds.
+  path: Assets/Scripts/PlayerScript
+  artifactKey: Guid(97dbec0b9d1cebc4a88c93e6e52b1054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerScript using Guid(97dbec0b9d1cebc4a88c93e6e52b1054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff141ba4f5c6ffc29fbf5cc2de6f866') in 0.050797 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008209 seconds.
+Registered in 0.007115 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -189,1165 +189,43 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.519 seconds
+- Completed reload, in  3.703 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2523ms)
-		BeginReloadAssembly (896ms)
+	ReloadAssembly (3704ms)
+		BeginReloadAssembly (423ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (39ms)
+			DisableScriptedObjects (15ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (456ms)
-		EndReloadAssembly (1439ms)
-			LoadAssemblies (311ms)
+			ReleaseScriptingObjects (5ms)
+			CreateAndSetChildDomain (139ms)
+		EndReloadAssembly (2919ms)
+			LoadAssemblies (291ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (636ms)
+			SetupTypeCache (1076ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (501ms)
+			RebuildScriptCaches (120ms)
+			SetupLoadedEditorAssemblies (1290ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (28ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (306ms)
-				ProcessInitializeOnLoadMethodAttributes (81ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5863.
-Memory consumption went from 209.7 MB to 209.0 MB.
-Total: 10.134100 ms (FindLiveObjects: 0.652900 ms CreateObjectMapping: 0.646900 ms MarkObjects: 7.921600 ms  DeleteObjects: 0.909700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007672 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.052 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2053ms)
-		BeginReloadAssembly (226ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (66ms)
-		EndReloadAssembly (1694ms)
-			LoadAssemblies (171ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (520ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (834ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (76ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (70ms)
+				SetLoadedEditorAssemblies (2ms)
 				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (522ms)
-				ProcessInitializeOnLoadMethodAttributes (104ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5878.
-Memory consumption went from 209.8 MB to 209.0 MB.
-Total: 5.998200 ms (FindLiveObjects: 0.453800 ms CreateObjectMapping: 0.474800 ms MarkObjects: 4.408200 ms  DeleteObjects: 0.660100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006093 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.849 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1850ms)
-		BeginReloadAssembly (149ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (1588ms)
-			LoadAssemblies (112ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (523ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (768ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (41ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (131ms)
-				ProcessInitializeOnLoadAttributes (471ms)
-				ProcessInitializeOnLoadMethodAttributes (115ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.67 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5893.
-Memory consumption went from 209.8 MB to 209.0 MB.
-Total: 5.770800 ms (FindLiveObjects: 0.789000 ms CreateObjectMapping: 1.138000 ms MarkObjects: 3.449300 ms  DeleteObjects: 0.392700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005062 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.781 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1782ms)
-		BeginReloadAssembly (192ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1444ms)
-			LoadAssemblies (150ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (469ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (647ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (40ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (110ms)
-				ProcessInitializeOnLoadAttributes (369ms)
-				ProcessInitializeOnLoadMethodAttributes (115ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5908.
-Memory consumption went from 209.8 MB to 209.0 MB.
-Total: 7.156400 ms (FindLiveObjects: 0.712500 ms CreateObjectMapping: 0.556200 ms MarkObjects: 5.302100 ms  DeleteObjects: 0.584000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005220 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.678 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1678ms)
-		BeginReloadAssembly (228ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (1337ms)
-			LoadAssemblies (233ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (449ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (549ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (30ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (335ms)
-				ProcessInitializeOnLoadMethodAttributes (85ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.94 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5923.
-Memory consumption went from 209.8 MB to 209.0 MB.
-Total: 4.431600 ms (FindLiveObjects: 0.585700 ms CreateObjectMapping: 0.473500 ms MarkObjects: 3.024400 ms  DeleteObjects: 0.346900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008618 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.651 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1652ms)
-		BeginReloadAssembly (178ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1367ms)
-			LoadAssemblies (114ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (438ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (704ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (31ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (126ms)
-				ProcessInitializeOnLoadAttributes (435ms)
-				ProcessInitializeOnLoadMethodAttributes (102ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5938.
-Memory consumption went from 209.8 MB to 209.0 MB.
-Total: 6.326500 ms (FindLiveObjects: 0.452700 ms CreateObjectMapping: 0.425400 ms MarkObjects: 4.742800 ms  DeleteObjects: 0.704200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006916 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.862 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1863ms)
-		BeginReloadAssembly (141ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1597ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (612ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (668ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (41ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (132ms)
-				ProcessInitializeOnLoadAttributes (336ms)
-				ProcessInitializeOnLoadMethodAttributes (144ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.36 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5953.
-Memory consumption went from 209.8 MB to 209.1 MB.
-Total: 5.688200 ms (FindLiveObjects: 0.954700 ms CreateObjectMapping: 0.628400 ms MarkObjects: 3.495100 ms  DeleteObjects: 0.608300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005233 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.888 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1889ms)
-		BeginReloadAssembly (215ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (70ms)
-		EndReloadAssembly (1522ms)
-			LoadAssemblies (184ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (539ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (71ms)
-			SetupLoadedEditorAssemblies (667ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (30ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (435ms)
-				ProcessInitializeOnLoadMethodAttributes (102ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 7.20 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5968.
-Memory consumption went from 209.9 MB to 209.1 MB.
-Total: 6.707100 ms (FindLiveObjects: 0.548700 ms CreateObjectMapping: 0.610200 ms MarkObjects: 4.694200 ms  DeleteObjects: 0.852700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006719 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.942 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3945ms)
-		BeginReloadAssembly (822ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (28ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (262ms)
-		EndReloadAssembly (2842ms)
-			LoadAssemblies (479ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (881ms)
-			ReleaseScriptCaches (7ms)
-			RebuildScriptCaches (139ms)
-			SetupLoadedEditorAssemblies (1423ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (57ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (171ms)
-				ProcessInitializeOnLoadAttributes (958ms)
-				ProcessInitializeOnLoadMethodAttributes (205ms)
-				AfterProcessingInitializeOnLoad (26ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (35ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5983.
-Memory consumption went from 209.9 MB to 209.1 MB.
-Total: 6.976100 ms (FindLiveObjects: 0.724400 ms CreateObjectMapping: 0.462000 ms MarkObjects: 4.109500 ms  DeleteObjects: 1.678600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005575 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.527 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2528ms)
-		BeginReloadAssembly (344ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (144ms)
-		EndReloadAssembly (2020ms)
-			LoadAssemblies (306ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (673ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (936ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (41ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (635ms)
-				ProcessInitializeOnLoadMethodAttributes (127ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.25 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5998.
-Memory consumption went from 209.9 MB to 209.1 MB.
-Total: 12.704300 ms (FindLiveObjects: 0.632700 ms CreateObjectMapping: 0.650200 ms MarkObjects: 9.730500 ms  DeleteObjects: 1.688800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1784.325585 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack
-  artifactKey: Guid(d58a6f8191417bc4e9d6e420df614167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack using Guid(d58a6f8191417bc4e9d6e420df614167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa78c3b6ce489562268dc02aede8b515') in 0.827117 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001862 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/turn 90 left.fbx
-  artifactKey: Guid(a2ba8cf26dbfc584a9eb7e5d939cb633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/turn 90 left.fbx using Guid(a2ba8cf26dbfc584a9eb7e5d939cb633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9ec79a392c4510d60a5089cf9428fa') in 0.732737 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from right.fbx
-  artifactKey: Guid(8d1b4302ab19311489f7633319141188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from right.fbx using Guid(8d1b4302ab19311489f7633319141188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6506c5f2df00fae57a4848ebf60152ac') in 0.033946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/jump down.fbx
-  artifactKey: Guid(e7067e79defb0704d8a0e73d2c670341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/jump down.fbx using Guid(e7067e79defb0704d8a0e73d2c670341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8b5fbad15991dd150363fc2010a360') in 0.023194 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint backward left.fbx
-  artifactKey: Guid(0dca37537e060944cb12a2964b3bfbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint backward left.fbx using Guid(0dca37537e060944cb12a2964b3bfbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c68668ac8b6212191834af469be2c66') in 0.024144 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run forward left.fbx
-  artifactKey: Guid(e6f8ab8949af7e24e9227e5b11bdaa94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run forward left.fbx using Guid(e6f8ab8949af7e24e9227e5b11bdaa94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd38b71f7cb7e3e42671d0e34784db9') in 0.025257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk backward right.fbx
-  artifactKey: Guid(c26f1c8ef9369de479975777a180b30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk backward right.fbx using Guid(c26f1c8ef9369de479975777a180b30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121fa9871df2834cb1bd646ae26b08a3') in 0.025937 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint left.fbx
-  artifactKey: Guid(e2457b6904f5df042bb9ece414ed779a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint left.fbx using Guid(e2457b6904f5df042bb9ece414ed779a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32ef56ed823f82abdc00a791b28b8c7') in 0.026886 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run backward left.fbx
-  artifactKey: Guid(686f10f35ae1c11499ef606fe405f20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run backward left.fbx using Guid(686f10f35ae1c11499ef606fe405f20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191179a1fd3e828411169bb3ac0c9529') in 0.028491 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/turn 90 right.fbx
-  artifactKey: Guid(07f3dfb41a219b6409acbb06ec51dab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/turn 90 right.fbx using Guid(07f3dfb41a219b6409acbb06ec51dab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a204f04d8351db98558d335c0c3cf5') in 0.027094 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint right.fbx
-  artifactKey: Guid(a3ee3c356c2cae040a31c1c6af0745c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint right.fbx using Guid(a3ee3c356c2cae040a31c1c6af0745c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27cd32e8e4bf1be50dccfc1a9439ec3') in 0.026908 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run forward right.fbx
-  artifactKey: Guid(8e7718f6766a543459d0e77076933333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run forward right.fbx using Guid(8e7718f6766a543459d0e77076933333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f81e242d9d45c49bfc739924556ce2') in 0.028258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint backward right.fbx
-  artifactKey: Guid(c2a10c63287e30047931e890cddae4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint backward right.fbx using Guid(c2a10c63287e30047931e890cddae4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231a4b1774ec123db07af2d86928aa69') in 0.024851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from front headshot.fbx
-  artifactKey: Guid(220c5b0b1189c1c42bba4f319777c735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from front headshot.fbx using Guid(220c5b0b1189c1c42bba4f319777c735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfdbb2a71fd1b307d786aea87eacd637') in 0.029740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/jump loop.fbx
-  artifactKey: Guid(693a2e7db49cca844bd44d166f75c181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/jump loop.fbx using Guid(693a2e7db49cca844bd44d166f75c181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8295c856764aca4d18d2f13ce5c23d8') in 0.031107 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/idle crouching aiming.fbx
-  artifactKey: Guid(3b4fd27eba7de1746a3a5c6ea231e71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/idle crouching aiming.fbx using Guid(3b4fd27eba7de1746a3a5c6ea231e71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cfd5f668721ef1d732782a796979bc') in 0.037838 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/jump up.fbx
-  artifactKey: Guid(75804507a7cd03c4da14d344ed8fcb15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/jump up.fbx using Guid(75804507a7cd03c4da14d344ed8fcb15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bbef7d1f1589adf3de9668f7e915528') in 0.038714 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from the front.fbx
-  artifactKey: Guid(25cea0c0b3e7cc846b2fcf916b851815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from the front.fbx using Guid(25cea0c0b3e7cc846b2fcf916b851815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59405e6de4b65e5a78d06f5e54da3e4b') in 0.030757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint backward.fbx
-  artifactKey: Guid(3cfe025886969714faae612f7df4e81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint backward.fbx using Guid(3cfe025886969714faae612f7df4e81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f88985802d1ff671ff89b097f244185') in 0.021709 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint forward.fbx
-  artifactKey: Guid(c10bafa9e65df53499d7a1ba54933a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint forward.fbx using Guid(c10bafa9e65df53499d7a1ba54933a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526c99f19b56a144f1627e0c550fa573') in 0.025460 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk backward left.fbx
-  artifactKey: Guid(3538df4f671b4f6458acae1df8c923c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk backward left.fbx using Guid(3538df4f671b4f6458acae1df8c923c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333c036a1a491769ce5e7df57c4c347f') in 0.029995 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/crouching turn 90 left.fbx
-  artifactKey: Guid(aaefe736978fea94f9252f056220833a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/crouching turn 90 left.fbx using Guid(aaefe736978fea94f9252f056220833a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d52aada944a352c2e7ac1a9a6a14a78') in 0.039409 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from back headshot.fbx
-  artifactKey: Guid(ea8e000fd77b8264985936d745e6059f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from back headshot.fbx using Guid(ea8e000fd77b8264985936d745e6059f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2968a0d15fa4136b58aa943bf810c1ff') in 0.035920 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/crouching turn 90 right.fbx
-  artifactKey: Guid(d209949b155a30f468fd9599aa6abad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/crouching turn 90 right.fbx using Guid(d209949b155a30f468fd9599aa6abad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676136c4ea84eb3a0f6690a33863a89f') in 0.023687 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/idle crouching.fbx
-  artifactKey: Guid(39ab8aa7707ef80419968581c6f5bead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/idle crouching.fbx using Guid(39ab8aa7707ef80419968581c6f5bead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a0ca87952168df97022ca00ff4c3f8') in 0.021989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/idle aiming.fbx
-  artifactKey: Guid(dea6891ab23b1f942b20a102ef8f5a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/idle aiming.fbx using Guid(dea6891ab23b1f942b20a102ef8f5a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92bf98d7167b11c65c50523aee115e6') in 0.025649 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/idle.fbx
-  artifactKey: Guid(a33a92e492527e748b0278837733dd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/idle.fbx using Guid(a33a92e492527e748b0278837733dd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '329d8089e74402290ba69d92ade291a5') in 0.033162 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run backward.fbx
-  artifactKey: Guid(1026abb228ef79b48bf4f2ac55fd357d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run backward.fbx using Guid(1026abb228ef79b48bf4f2ac55fd357d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df1cce9cf671d2608c916a869aecf24') in 0.032482 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint forward left.fbx
-  artifactKey: Guid(f912b7bc35e84b0468cc3bee36d50e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint forward left.fbx using Guid(f912b7bc35e84b0468cc3bee36d50e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c82a12747a40cc0e5453b6f569aaa0') in 0.030535 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from the back.fbx
-  artifactKey: Guid(9d18751b286f7f045a5c97acb41d5f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from the back.fbx using Guid(9d18751b286f7f045a5c97acb41d5f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ad17b39e777f4ec8014faed8b0922d') in 0.026240 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run right.fbx
-  artifactKey: Guid(5fb87a5e87d0d624584962be5c60cab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run right.fbx using Guid(5fb87a5e87d0d624584962be5c60cab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01441b86104e25af1def9bbe0075527') in 0.024896 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint forward right.fbx
-  artifactKey: Guid(ecdedbe2c873d3749afb116a8fa49c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint forward right.fbx using Guid(ecdedbe2c873d3749afb116a8fa49c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c31582f647ae3af35b7e4ef96dd955c') in 0.022976 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk backward.fbx
-  artifactKey: Guid(3e7ef555ae2cf3b47a6fcf82995c3ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk backward.fbx using Guid(3e7ef555ae2cf3b47a6fcf82995c3ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c29322ca22352d97929c56990f7a7e') in 0.026169 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.556175 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk crouching backward left.fbx
-  artifactKey: Guid(af8ba4072070b0b40adc80b4656b30b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk crouching backward left.fbx using Guid(af8ba4072070b0b40adc80b4656b30b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a624e84e8f03bdfb6a68940dd134c08') in 0.031056 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk crouching backward.fbx
-  artifactKey: Guid(409fa187e5de1834a8078a74a294a149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk crouching backward.fbx using Guid(409fa187e5de1834a8078a74a294a149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a27946885ae8b674966922432eb084') in 0.033019 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk forward left.fbx
-  artifactKey: Guid(461f672d3509e9e4b946ba602e35e33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk forward left.fbx using Guid(461f672d3509e9e4b946ba602e35e33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2777dcb5440d536b587fa68adf9bbac0') in 0.032666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk crouching right.fbx
-  artifactKey: Guid(6963f55bcd68df449b9b1526fd406bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk crouching right.fbx using Guid(6963f55bcd68df449b9b1526fd406bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b84db176d80fa5ef492e301ca14f141') in 0.042132 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk right.fbx
-  artifactKey: Guid(2eaf562a1ad5f984a8644af4e80d5238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk right.fbx using Guid(2eaf562a1ad5f984a8644af4e80d5238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547ee2dbd17e44a29eef237c924def4a') in 0.044664 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk left.fbx
-  artifactKey: Guid(f128b42726d03de41beb04a96f4286f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk left.fbx using Guid(f128b42726d03de41beb04a96f4286f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e5a2678525b91e0673b75702b467a0') in 0.037034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.790920 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/idle.fbx
-  artifactKey: Guid(a33a92e492527e748b0278837733dd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/idle.fbx using Guid(a33a92e492527e748b0278837733dd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1e074a32bfae92fffda2cdf07a9d419') in 0.012121 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.106252 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/crouching turn 90 left.fbx
-  artifactKey: Guid(aaefe736978fea94f9252f056220833a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/crouching turn 90 left.fbx using Guid(aaefe736978fea94f9252f056220833a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101e0ccd9a066671218da7168829945d') in 0.014928 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from right.fbx
-  artifactKey: Guid(8d1b4302ab19311489f7633319141188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from right.fbx using Guid(8d1b4302ab19311489f7633319141188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbde34b08a484e558681ff09a8807d8') in 0.016289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run backward left.fbx
-  artifactKey: Guid(686f10f35ae1c11499ef606fe405f20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run backward left.fbx using Guid(686f10f35ae1c11499ef606fe405f20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d44b6d8d052c83afabb079585b5bccf') in 0.013749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from front headshot.fbx
-  artifactKey: Guid(220c5b0b1189c1c42bba4f319777c735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from front headshot.fbx using Guid(220c5b0b1189c1c42bba4f319777c735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a611ebccc1745bd58b125a93a347c0d2') in 0.017443 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/idle crouching aiming.fbx
-  artifactKey: Guid(3b4fd27eba7de1746a3a5c6ea231e71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/idle crouching aiming.fbx using Guid(3b4fd27eba7de1746a3a5c6ea231e71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd9ecf37b7443273a05ab165f318b8a6') in 0.010219 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from the front.fbx
-  artifactKey: Guid(25cea0c0b3e7cc846b2fcf916b851815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from the front.fbx using Guid(25cea0c0b3e7cc846b2fcf916b851815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18958795d7b79084ea0e6af70f3a94f0') in 0.027735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run backward.fbx
-  artifactKey: Guid(1026abb228ef79b48bf4f2ac55fd357d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run backward.fbx using Guid(1026abb228ef79b48bf4f2ac55fd357d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '672dac438a4851867653cec27c0c3171') in 0.010953 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/idle aiming.fbx
-  artifactKey: Guid(dea6891ab23b1f942b20a102ef8f5a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/idle aiming.fbx using Guid(dea6891ab23b1f942b20a102ef8f5a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a9bf210583cec9b49d577c9cc6a926') in 0.016062 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/death from the back.fbx
-  artifactKey: Guid(9d18751b286f7f045a5c97acb41d5f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/death from the back.fbx using Guid(9d18751b286f7f045a5c97acb41d5f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0df0c64b498677b9b2b3fd660f9e3d8d') in 0.013015 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run right.fbx
-  artifactKey: Guid(5fb87a5e87d0d624584962be5c60cab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run right.fbx using Guid(5fb87a5e87d0d624584962be5c60cab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdab4a3584c0a534a236627e17818e12') in 0.017670 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/run backward right.fbx
-  artifactKey: Guid(e10ce381fff412d4395d17933c9deab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/run backward right.fbx using Guid(e10ce381fff412d4395d17933c9deab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f6b65c533b8ebeff8b9c9f5ab46f68') in 0.037204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 41.740870 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint forward.fbx
-  artifactKey: Guid(c10bafa9e65df53499d7a1ba54933a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint forward.fbx using Guid(c10bafa9e65df53499d7a1ba54933a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399e217ffb9652b364f9cf1990dd965d') in 0.007395 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.083101 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint backward left.fbx
-  artifactKey: Guid(0dca37537e060944cb12a2964b3bfbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint backward left.fbx using Guid(0dca37537e060944cb12a2964b3bfbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a45f85916504607e160fcaae9aa4cd') in 0.014948 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/turn 90 left.fbx
-  artifactKey: Guid(a2ba8cf26dbfc584a9eb7e5d939cb633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/turn 90 left.fbx using Guid(a2ba8cf26dbfc584a9eb7e5d939cb633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9fd0ed8011523200d8d28828e0d304e') in 0.015043 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/turn 90 right.fbx
-  artifactKey: Guid(07f3dfb41a219b6409acbb06ec51dab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/turn 90 right.fbx using Guid(07f3dfb41a219b6409acbb06ec51dab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc913c0335087f4dce153fd72daa05ce') in 0.013540 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk backward right.fbx
-  artifactKey: Guid(c26f1c8ef9369de479975777a180b30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk backward right.fbx using Guid(c26f1c8ef9369de479975777a180b30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc031de4e5c7caba41f89da7b8253d1b') in 0.011273 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk crouching forward.fbx
-  artifactKey: Guid(547da9dc0a5649942af24e1cfb6688d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk crouching forward.fbx using Guid(547da9dc0a5649942af24e1cfb6688d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '104eefd6371fed2443545b6f79c6962b') in 0.018041 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint backward.fbx
-  artifactKey: Guid(3cfe025886969714faae612f7df4e81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint backward.fbx using Guid(3cfe025886969714faae612f7df4e81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a338f4919af11c3b6aa284e975b0e817') in 0.030020 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk crouching backward right.fbx
-  artifactKey: Guid(207535318e98517489a92b70477ff224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk crouching backward right.fbx using Guid(207535318e98517489a92b70477ff224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932fc6dfeda629229be14502a11c461f') in 0.018091 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk forward right.fbx
-  artifactKey: Guid(b2c1578c8c7dd094e8f5de11f40bbaff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk forward right.fbx using Guid(b2c1578c8c7dd094e8f5de11f40bbaff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fb8c9926a959dd055ea5903e97655b') in 0.027043 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint forward left.fbx
-  artifactKey: Guid(f912b7bc35e84b0468cc3bee36d50e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint forward left.fbx using Guid(f912b7bc35e84b0468cc3bee36d50e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c417c56d79368399df6030880d418b97') in 0.013234 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/sprint forward right.fbx
-  artifactKey: Guid(ecdedbe2c873d3749afb116a8fa49c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/sprint forward right.fbx using Guid(ecdedbe2c873d3749afb116a8fa49c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08e12cb59049e13e22450dfc4c453a8') in 0.014579 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk backward.fbx
-  artifactKey: Guid(3e7ef555ae2cf3b47a6fcf82995c3ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk backward.fbx using Guid(3e7ef555ae2cf3b47a6fcf82995c3ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fd19564bdc59a6c20e52ad6a336fe9') in 0.009034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.085032 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk right.fbx
-  artifactKey: Guid(2eaf562a1ad5f984a8644af4e80d5238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk right.fbx using Guid(2eaf562a1ad5f984a8644af4e80d5238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d4b871b50709c0fc33986e39d2126d') in 0.006038 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.025705 seconds.
-  path: Assets/Mixamo/Pro Rifle Pack/walk left.fbx
-  artifactKey: Guid(f128b42726d03de41beb04a96f4286f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Pro Rifle Pack/walk left.fbx using Guid(f128b42726d03de41beb04a96f4286f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e64fc3ec495e31cb99aad2fcf2779b2') in 0.021197 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2159.009537 seconds.
-  path: Assets/Mixamo/Shooter Pack/FIre Walk and Run.fbx
-  artifactKey: Guid(930ab50b604d1394797ea9cb40700cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Shooter Pack/FIre Walk and Run.fbx using Guid(930ab50b604d1394797ea9cb40700cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59669e7f823336fecddbcbc0bfa8f5c') in 1.951006 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.301545 seconds.
-  path: Assets/Mixamo/Shooter Pack/FIre Walk and Run.fbx
-  artifactKey: Guid(930ab50b604d1394797ea9cb40700cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo/Shooter Pack/FIre Walk and Run.fbx using Guid(930ab50b604d1394797ea9cb40700cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736bf8951bcd3c58c30f611fa32812f4') in 0.052057 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006714 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.868 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2870ms)
-		BeginReloadAssembly (882ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (29ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (511ms)
-		EndReloadAssembly (1807ms)
-			LoadAssemblies (342ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (625ms)
-			ReleaseScriptCaches (7ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (740ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (35ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (468ms)
-				ProcessInitializeOnLoadMethodAttributes (100ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5260 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 6102.
-Memory consumption went from 217.8 MB to 217.0 MB.
-Total: 6.331700 ms (FindLiveObjects: 0.511300 ms CreateObjectMapping: 0.433500 ms MarkObjects: 4.860500 ms  DeleteObjects: 0.524500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005521 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.957 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1958ms)
-		BeginReloadAssembly (226ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (70ms)
-		EndReloadAssembly (1584ms)
-			LoadAssemblies (160ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (515ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (763ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (32ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (514ms)
-				ProcessInitializeOnLoadMethodAttributes (114ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5261 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 6117.
-Memory consumption went from 217.9 MB to 217.1 MB.
-Total: 7.808200 ms (FindLiveObjects: 0.869000 ms CreateObjectMapping: 1.241600 ms MarkObjects: 3.783300 ms  DeleteObjects: 1.912700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008011 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.294 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2295ms)
-		BeginReloadAssembly (437ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (21ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (214ms)
-		EndReloadAssembly (1699ms)
-			LoadAssemblies (148ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (613ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (742ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (48ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (155ms)
-				ProcessInitializeOnLoadAttributes (419ms)
-				ProcessInitializeOnLoadMethodAttributes (109ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (187ms)
+				ProcessInitializeOnLoadAttributes (811ms)
+				ProcessInitializeOnLoadMethodAttributes (199ms)
+				AfterProcessingInitializeOnLoad (18ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (18ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5261 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 6132.
-Memory consumption went from 218.0 MB to 217.2 MB.
-Total: 6.884000 ms (FindLiveObjects: 0.519300 ms CreateObjectMapping: 0.438700 ms MarkObjects: 5.333100 ms  DeleteObjects: 0.591600 ms)
+Unloading 5253 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5863.
+Memory consumption went from 209.7 MB to 208.9 MB.
+Total: 13.987800 ms (FindLiveObjects: 7.659400 ms CreateObjectMapping: 1.003800 ms MarkObjects: 4.788500 ms  DeleteObjects: 0.533900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1361,122 +239,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007367 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.835 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1837ms)
-		BeginReloadAssembly (204ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (64ms)
-		EndReloadAssembly (1496ms)
-			LoadAssemblies (145ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (496ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (94ms)
-			SetupLoadedEditorAssemblies (641ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (36ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (105ms)
-				ProcessInitializeOnLoadAttributes (384ms)
-				ProcessInitializeOnLoadMethodAttributes (99ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5261 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 6147.
-Memory consumption went from 218.0 MB to 217.3 MB.
-Total: 11.562800 ms (FindLiveObjects: 1.079200 ms CreateObjectMapping: 0.823300 ms MarkObjects: 8.212200 ms  DeleteObjects: 1.446400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 21.907696 seconds.
+  path: Assets/Scripts/PlayerScript/XP/XPTracker.cs
+  artifactKey: Guid(a6b53efb845712c4c901799a7ed565c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerScript/XP/XPTracker.cs using Guid(a6b53efb845712c4c901799a7ed565c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2b456906117e47f639cc3e2f77621d') in 0.085972 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004980 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Sos3\Son of Saigon 3\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.26 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.900 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1901ms)
-		BeginReloadAssembly (170ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1596ms)
-			LoadAssemblies (153ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (474ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (96ms)
-			SetupLoadedEditorAssemblies (731ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (35ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (150ms)
-				ProcessInitializeOnLoadAttributes (425ms)
-				ProcessInitializeOnLoadMethodAttributes (111ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5261 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 6162.
-Memory consumption went from 218.1 MB to 217.3 MB.
-Total: 7.082500 ms (FindLiveObjects: 1.419500 ms CreateObjectMapping: 0.628700 ms MarkObjects: 4.284900 ms  DeleteObjects: 0.746000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 2.874868 seconds.
+  path: Assets/Scripts/PlayerScript/XP/XPTranslation_Table.cs
+  artifactKey: Guid(604417a483a47814fbe34f99bcda07ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerScript/XP/XPTranslation_Table.cs using Guid(604417a483a47814fbe34f99bcda07ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d107b5b633a69cce89bbd57a412bfe7') in 0.015956 seconds 
