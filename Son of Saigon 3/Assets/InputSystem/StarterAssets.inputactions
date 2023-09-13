@@ -44,7 +44,7 @@
                 {
                     "name": "Shoot",
                     "type": "PassThrough",
-                    "id": "60e01d4f-3b58-4143-85db-9deeeb2b2671",
+                    "id": "45f9ed94-0d49-427b-be64-9d30596f9495",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -230,11 +230,11 @@
                 },
                 {
                     "name": "",
-                    "id": "8d476e5b-6ad6-4ca5-a274-192db09d2a29",
+                    "id": "e0c12b7f-f4f3-491f-9230-da1bee6eec7c",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardMouse",
+                    "groups": "",
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
