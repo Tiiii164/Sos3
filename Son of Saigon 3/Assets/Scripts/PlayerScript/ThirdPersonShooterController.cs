@@ -25,7 +25,10 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public bool isAim = false;
     private bool spawnBullet = true;
-    //private float delaySpawnBullet = 0.1f;
+    public float lastPistolShotTime = 0f;
+    public float lastRifeShotTime = 0f;
+    public float delaySpawnRifeBullet = 0.05f;
+    public float delaySpawnPistolBullet = 0.1f;
     private Animator animator;
     private Vector3 mouseWorldPosition = Vector3.zero;
     private void Awake()
@@ -86,8 +89,13 @@ public class ThirdPersonShooterController : MonoBehaviour
     {
         if (starterAssestsInput.shoot && spawnBullet && thirPersonController.hasRife)
         {
-            RifeShooting();
-            animator.SetBool("Shooting", true);
+            float timeSinceLastShot = Time.time - lastRifeShotTime;
+            if(timeSinceLastShot >= delaySpawnRifeBullet)
+            {
+                lastRifeShotTime = Time.time;
+                RifeShooting();
+                animator.SetBool("Shooting", true);
+            }
         }
         else
         {
@@ -97,9 +105,14 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public void CheckPistolFire()
     {
-        if (starterAssestsInput.shoot && spawnBullet)
+        if (starterAssestsInput.shoot && spawnBullet && thirPersonController.hasPistol)
         {
-            PistolShooting();
+            float timeSinceLastShot = Time.time - lastPistolShotTime;
+            if (timeSinceLastShot >= delaySpawnPistolBullet)
+            {
+                lastPistolShotTime = Time.time;
+                PistolShooting();
+            }
         }
     }
 
