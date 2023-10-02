@@ -9,6 +9,7 @@ namespace CodeMonkey.HealthSystemCM
     {
         [SerializeField] int HP = 100;
         [SerializeField] int DamageStat = 15;
+        int gidogido = 1;
         public Animator animator;
         [SerializeField] XPTracker XPTracker;
         //private AudioSource enemyAudio;
