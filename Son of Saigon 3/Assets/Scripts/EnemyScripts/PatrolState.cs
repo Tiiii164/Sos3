@@ -18,7 +18,7 @@ public class PatrolState : StateMachineBehaviour
         navMeshAgent = animator.GetComponent<NavMeshAgent>();
         navMeshAgent.speed = patrolSpeed;
 
-        timer = 0;      
+        timer = 0;
         GameObject go = GameObject.FindGameObjectWithTag("WayPoints");
 
         foreach(Transform t in go.transform)
@@ -26,7 +26,7 @@ public class PatrolState : StateMachineBehaviour
             wayPoints.Add(t);
         }
 
-        //navMeshAgent.SetDestination(wayPoints[Random.Range(0,wayPoints.Count)].position);
+        navMeshAgent.SetDestination(wayPoints[Random.Range(0,wayPoints.Count)].position);
 
     }
 
@@ -42,7 +42,7 @@ public class PatrolState : StateMachineBehaviour
         //Monster patrolling from place to place
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            //navMeshAgent.SetDestination(wayPoints[Random.Range(0, wayPoints.Count)].position);
+            navMeshAgent.SetDestination(wayPoints[Random.Range(0, wayPoints.Count)].position);
         }
         
         
