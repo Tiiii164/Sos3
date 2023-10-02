@@ -4,6 +4,7 @@ namespace LlamAcademy.FSM
     {
         DetectPlayer,
         LostPlayer,
-        RushImpact
+        RushImpact,
+        Die
     }
 }

@@ -90,7 +90,7 @@ namespace StarterAssets
         private float _rotationVelocity;
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
-
+        private CharacterStats characterStats;
         // timeout deltatime
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
@@ -138,6 +138,7 @@ namespace StarterAssets
 
         private void Awake()
         {
+            characterStats = CharacterStats.Instance;
             // get a reference to our main camera
             if (_mainCamera == null)
             {
@@ -174,6 +175,7 @@ namespace StarterAssets
             GroundedCheck();
             Move();
             SwitchWeapon();
+            
         }
 
         private void LateUpdate()
@@ -189,7 +191,14 @@ namespace StarterAssets
             _animIDFreeFall = Animator.StringToHash("FreeFall");
             _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
         }
+        /*  private void DiedCheck()
+        {
+             if (characterStats.MaxHealthStat < 0 )
+             {
+                 _animator.SetTrigger("Die");
 
+             }
+         }*/
         private void GroundedCheck()
         {
             // set sphere position, with offset
@@ -202,6 +211,7 @@ namespace StarterAssets
             if (_hasAnimator)
             {
                 _animator.SetBool(_animIDGrounded, Grounded);
+                
             }
         }
 
@@ -226,7 +236,7 @@ namespace StarterAssets
                 _cinemachineTargetYaw, 0.0f);
         }
 
-        private void Move()
+        public void Move()
         {
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;

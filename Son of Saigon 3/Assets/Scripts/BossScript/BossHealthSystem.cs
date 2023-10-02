@@ -5,9 +5,9 @@ using CodeMonkey.HealthSystemCM;
 
 namespace CodeMonkey.HealthSystemCM
 {
-    public class EnemyNavMesh : MonoBehaviour, IGetHealthSystem
+    public class BossHealthSystem : MonoBehaviour, IGetHealthSystem
     {
-        [SerializeField] int HP = 100;
+        [SerializeField] int HP = 10000;
         [SerializeField] int DamageStat = 15;
         public Animator animator;
         [SerializeField] XPTracker XPTracker;
@@ -24,18 +24,12 @@ namespace CodeMonkey.HealthSystemCM
 
         public void Awake()
         {
-            healthSystem = new HealthSystem(MaxHealthStat);
+            healthSystem = new HealthSystem(HP);
             healthSystem.OnDead += HealthSystem_OnDead;
             healthSystem.OnDamaged += HealthSystem_OnDamaged;
         }
 
-        public int MaxHealthStat
-        {
-            get
-            {
-                return HP;
-            }
-        }
+
 
 
 
@@ -83,7 +77,7 @@ namespace CodeMonkey.HealthSystemCM
                 player.Damage(DamageStat);
                 //enemy.Damage(5);
             }
-        
+
         }
 
         private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
@@ -108,5 +102,5 @@ namespace CodeMonkey.HealthSystemCM
 }
 
 
-    
- 
+
+
