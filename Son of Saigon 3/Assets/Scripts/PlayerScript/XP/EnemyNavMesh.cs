@@ -24,18 +24,12 @@ namespace CodeMonkey.HealthSystemCM
 
         public void Awake()
         {
-            healthSystem = new HealthSystem(MaxHealthStat);
+            healthSystem = new HealthSystem(HP);
             healthSystem.OnDead += HealthSystem_OnDead;
             healthSystem.OnDamaged += HealthSystem_OnDamaged;
         }
 
-        public int MaxHealthStat
-        {
-            get
-            {
-                return HP;
-            }
-        }
+
 
 
 
@@ -96,7 +90,7 @@ namespace CodeMonkey.HealthSystemCM
         {
             gameObject.GetComponent<BoxCollider>().enabled = false;
             animator.SetTrigger("Die");
-            XPTracker.AddXP(HP/3);
+            XPTracker.AddXP(200);
             Destroy(gameObject, 5);
         }
 

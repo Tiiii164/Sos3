@@ -26,7 +26,7 @@ public class PatrolState : StateMachineBehaviour
             wayPoints.Add(t);
         }
 
-        //navMeshAgent.SetDestination(wayPoints[Random.Range(0,wayPoints.Count)].position);
+        navMeshAgent.SetDestination(wayPoints[Random.Range(0,wayPoints.Count)].position);
 
     }
 
@@ -42,7 +42,7 @@ public class PatrolState : StateMachineBehaviour
         //Monster patrolling from place to place
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            //navMeshAgent.SetDestination(wayPoints[Random.Range(0, wayPoints.Count)].position);
+            navMeshAgent.SetDestination(wayPoints[Random.Range(0, wayPoints.Count)].position);
         }
         
         

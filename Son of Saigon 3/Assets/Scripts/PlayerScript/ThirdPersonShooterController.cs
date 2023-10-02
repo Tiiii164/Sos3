@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 public class ThirdPersonShooterController : MonoBehaviour
 {
     // Get the VirtualCamera
-    [SerializeField] public CinemachineVirtualCamera aimVirtualCamera;
+    [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
     [SerializeField] private float aimSensitivity;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
