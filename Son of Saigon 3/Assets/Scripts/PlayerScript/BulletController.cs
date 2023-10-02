@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.HealthSystemCM;
+using LlamAcademy.FSM;
+
 namespace CodeMonkey.HealthSystemCM
 {
     public class BulletController : MonoBehaviour
@@ -29,9 +31,16 @@ namespace CodeMonkey.HealthSystemCM
             if (other.TryGetComponent(out EnemyNavMesh enemy))
             {
                 enemy.Damage(characterStats.DamageStat);
-                //enemy.Damage(5);
+               
                 Destroy(gameObject);
             }
+            else if (other.TryGetComponent(out BossHealthSystem boss))
+            {
+                boss.Damage(characterStats.DamageStat);
+              
+                Destroy(gameObject);
+            }
+
             else
             {
                 Destroy(gameObject);

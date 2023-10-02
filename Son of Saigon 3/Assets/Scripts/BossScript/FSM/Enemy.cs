@@ -66,13 +66,13 @@ namespace LlamAcademy.FSM
 
             // Add States
             EnemyFSM.AddState(EnemyState.Idle, new IdleState(false, this));
-            EnemyFSM.AddState(EnemyState.Die, new IdleState(false, this));
+            //EnemyFSM.AddState(EnemyState.Die, new DieState(false, this));
             EnemyFSM.AddState(EnemyState.Chase, new ChaseState(true, this, Player.transform));
             EnemyFSM.AddState(EnemyState.Spit, new SpitState(true, this, SpitPrefab, OnAttack));
             EnemyFSM.AddState(EnemyState.Bounce, new BounceState(true, this, BounceImpactParticleSystem, OnBounce));
             EnemyFSM.AddState(EnemyState.Rush, new RushState(true, this, OnRush));
             EnemyFSM.AddState(EnemyState.Attack, new AttackState(true, this,SmashPrefab, OnAttack));
-
+            
             // Add Transitions
             EnemyFSM.AddTriggerTransition(StateEvent.DetectPlayer, new Transition<EnemyState>(EnemyState.Idle, EnemyState.Chase));
             EnemyFSM.AddTriggerTransition(StateEvent.LostPlayer, new Transition<EnemyState>(EnemyState.Chase, EnemyState.Idle));
