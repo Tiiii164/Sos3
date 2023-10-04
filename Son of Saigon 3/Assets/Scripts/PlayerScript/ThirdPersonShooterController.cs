@@ -31,11 +31,25 @@ public class ThirdPersonShooterController : MonoBehaviour
     public float delaySpawnPistolBullet = 0.1f;
     private Animator animator;
     private Vector3 mouseWorldPosition = Vector3.zero;
+    public int maxAmmoRife = 30; // Số đạn tối đa cho vũ khí này
+    public int maxAmmoPistol = 25; // Số đạn tối đa cho vũ khí này
+    private int currentAmmoRife; // Số đạn hiện tại
+    private int currentAmmoPistol;
+    private float reloadTimeRife = 3f;
+    private float reloadTimePistol = 2.75f;
+    private bool isReloading = false; // Đang trong quá trình reload
+    private bool isOutOfAmmo = false;
     private void Awake()
     {
         starterAssestsInput = GetComponent<StarterAssetsInputs>();
         thirPersonController = GetComponent<ThirdPersonController>();
         animator = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        currentAmmoRife = maxAmmoRife;
+        currentAmmoPistol = maxAmmoPistol;
     }
 
     // Update is called once per frame
@@ -49,7 +63,11 @@ public class ThirdPersonShooterController : MonoBehaviour
         if(thirPersonController.hasPistol)
         {
             CheckPistolFire();
-        }  
+        }
+        if (Input.GetKeyDown(KeyCode.R) && !isReloading || isOutOfAmmo)
+        {
+            StartCoroutine(Reload());
+        }
     }
 
     public void Aimming()
@@ -87,7 +105,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public void CheckRifeFire()
     {
-        if (starterAssestsInput.shoot && spawnBullet && thirPersonController.hasRife)
+        if (starterAssestsInput.shoot && !isOutOfAmmo && thirPersonController.hasRife)
         {
             float timeSinceLastShot = Time.time - lastRifeShotTime;
             if(timeSinceLastShot >= delaySpawnRifeBullet)
@@ -95,6 +113,12 @@ public class ThirdPersonShooterController : MonoBehaviour
                 lastRifeShotTime = Time.time;
                 RifeShooting();
                 animator.SetBool("Shooting", true);
+
+                currentAmmoRife--; // Giảm số đạn hiện tại của Rife
+                if (currentAmmoRife == 0)
+                {
+                    isOutOfAmmo = true; // Đặt biến isOutOfAmmo thành true nếu hết đạn
+                }
             }
         }
         else
@@ -105,13 +129,19 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public void CheckPistolFire()
     {
-        if (starterAssestsInput.shoot && spawnBullet && thirPersonController.hasPistol)
+        if (starterAssestsInput.shoot && !isOutOfAmmo && thirPersonController.hasPistol)
         {
             float timeSinceLastShot = Time.time - lastPistolShotTime;
             if (timeSinceLastShot >= delaySpawnPistolBullet)
             {
                 lastPistolShotTime = Time.time;
                 PistolShooting();
+
+                currentAmmoPistol--; // Giảm số đạn hiện tại của Pistol
+                if (currentAmmoPistol == 0)
+                {
+                    isOutOfAmmo = true; // Đặt biến isOutOfAmmo thành true nếu hết đạn
+                }
             }
         }
     }
@@ -136,5 +166,26 @@ public class ThirdPersonShooterController : MonoBehaviour
                 * Quaternion.Euler(90f, 0, 0);
             Instantiate(pistolBulletPf, pistolBulletSpawnPos.position, rotation);
         }
+    }
+
+    private IEnumerator Reload()
+    {
+        isReloading = true;
+        animator.SetBool("IsReload", true);
+
+        if (thirPersonController.hasRife)
+        {
+            yield return new WaitForSeconds(reloadTimeRife); // Đợi một khoảng thời gian cho quá trình reload Rife
+            currentAmmoRife = maxAmmoRife; // Làm đầy số đạn hiện tại cho Rife
+        }
+        else if (thirPersonController.hasPistol)
+        {
+            yield return new WaitForSeconds(reloadTimePistol); // Đợi một khoảng thời gian cho quá trình reload Pistol
+            currentAmmoPistol = maxAmmoPistol; // Làm đầy số đạn hiện tại cho Pistol
+        }
+
+        isReloading = false;
+        animator.SetBool("IsReload", false);
+        isOutOfAmmo = false; // Đặt biến isOutOfAmmo thành false khi reload hoàn thành
     }
 }
