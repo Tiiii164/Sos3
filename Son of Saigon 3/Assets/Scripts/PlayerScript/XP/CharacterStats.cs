@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using CodeMonkey.HealthSystemCM;
+using StarterAssets;
+
 public class CharacterStats : MonoBehaviour, IGetHealthSystem
 {
     [SerializeField] int BaseStamina_PerLevel = 5;
@@ -13,9 +15,17 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
     [SerializeField] TextMeshProUGUI HealthText;
     [SerializeField] TextMeshProUGUI DamageText;
     private HealthSystem healthSystem;
-
+    private Animator animator;
+    private int currentLevel;
+    CharacterController characterController;
+    ThirdPersonController thirdPersonController;
+    ThirdPersonShooterController thirdPersonShooterController;
     // Định nghĩa một biến static để lưu thể hiện Singleton
     private static CharacterStats instance;
+
+
+
+  
 
     // Khai báo các thông số và hành vi của nhân vật ở đây
 
@@ -59,6 +69,22 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
             return (int)(Stamina * StaminaConverseToDamage);
         }
     }
+    
+    void Awake()
+    {
+        BaseStamina = currentLevel * BaseStamina_PerLevel + BaseStamina_Offset;
+        healthSystem = new HealthSystem(MaxHealthStat);
+        healthSystem.OnDead += HealthSystem_OnDead;
+        healthSystem.OnDamaged += HealthSystem_OnDamaged;
+        
+        animator = GetComponent<Animator>();
+        characterController = GetComponent<CharacterController>();
+        thirdPersonController = GetComponent<ThirdPersonController>();
+    }
+
+
+
+   
     public void Damage(int damageAmount)
     {
         /*if (HP <= 0)
@@ -75,20 +101,15 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
         Debug.Log("Player Damaged");
     }
     // Start is called before the first frame update
-    void Awake()
-    {
-        healthSystem = new HealthSystem(MaxHealthStat);
-        healthSystem.OnDead += HealthSystem_OnDead;
-        healthSystem.OnDamaged += HealthSystem_OnDamaged;
-    }
+    
     // Update is called once per frame
     void Update()
     {
         
     }
-    public void OnUpdateLevel(int previousLevel,int currentLevel)
+    public void OnUpdateLevel()
     {
-        BaseStamina = currentLevel * BaseStamina_PerLevel + BaseStamina_Offset;
+
         StaminaText.text = $"Stamina: {Stamina}";
         HealthText.text = $"Max Health: {MaxHealthStat}";
         DamageText.text = $"Damage: {DamageStat}";
@@ -100,11 +121,16 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
     private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
     {
         //animator.SetTrigger("Damaged");
-        HealthText.text = $"Max Health: {MaxHealthStat}";
+        //HealthText.text = $"Max Health: {MaxHealthStat}";
     }
+    
     private void HealthSystem_OnDead(object sender, System.EventArgs e)
     {
-        Destroy(gameObject, 5);
+            animator.SetTrigger("Die");
+            //transform.parent.position = base.transform.position;
+            thirdPersonController.enabled = false;
     }
+
+    
 }
 // đã làm xong ăn dame sẽ chết nhân vật, cần phải làm cái event để khi mất máu nó cập nhật máu lên thanh máu

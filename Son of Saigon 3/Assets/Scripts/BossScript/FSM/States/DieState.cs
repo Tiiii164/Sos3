@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
+using FSM;
+using System;
 using UnityEngine;
 
-public class DieState : MonoBehaviour
+namespace LlamAcademy.FSM
 {
-    // Start is called before the first frame update
-    void Start()
+    public class DieState : EnemyStateBase
     {
-        
-    }
+        public DieState(
+            bool needsExitTime,
+            Enemy Enemy,
+            Action<State<EnemyState, StateEvent>> onEnter,
+            float ExitTime = 3f) : base(needsExitTime, Enemy, ExitTime, onEnter) { }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override void OnEnter()
+        {
+            Agent.isStopped = true;
+            base.OnEnter();
+            Animator.Play("Rush Attack");
+        }
+
+        public override void OnLogic()
+        {
+            Agent.Move(2f * Agent.speed * Time.deltaTime * Agent.transform.forward);
+            base.OnLogic();
+        }
     }
 }
