@@ -2,6 +2,7 @@ using UnityEngine;
 using FSM;
 using LlamAcademy.Sensors;
 using UnityEngine.AI;
+using System;
 
 namespace LlamAcademy.FSM
 {
@@ -66,7 +67,7 @@ namespace LlamAcademy.FSM
 
             // Add States
             EnemyFSM.AddState(EnemyState.Idle, new IdleState(false, this));
-            //EnemyFSM.AddState(EnemyState.Die, new DieState(false, this));
+            //EnemyFSM.AddState(EnemyState.Die, new DieState(false, this,OnDie));
             EnemyFSM.AddState(EnemyState.Chase, new ChaseState(true, this, Player.transform));
             EnemyFSM.AddState(EnemyState.Spit, new SpitState(true, this, SpitPrefab, OnAttack));
             EnemyFSM.AddState(EnemyState.Bounce, new BounceState(true, this, BounceImpactParticleSystem, OnBounce));
@@ -113,7 +114,9 @@ namespace LlamAcademy.FSM
             
             EnemyFSM.Init();
         }
-        
+
+       
+
         private void Start()
         {
             FollowPlayerSensor.OnPlayerEnter += FollowPlayerSensor_OnPlayerEnter;
@@ -181,7 +184,10 @@ namespace LlamAcademy.FSM
             transform.LookAt(Player.transform.position);
             LastAttackTime = Time.time;
         }
-
+        /*private void OnDie(State<EnemyState, StateEvent> state)
+        {
+            transform.
+        }*/
         private void OnBounce(State<EnemyState, StateEvent> State)
         {
             transform.LookAt(Player.transform.position);

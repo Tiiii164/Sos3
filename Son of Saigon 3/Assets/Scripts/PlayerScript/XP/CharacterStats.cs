@@ -4,7 +4,10 @@ using UnityEngine;
 using TMPro;
 using CodeMonkey.HealthSystemCM;
 using StarterAssets;
-
+using Unity.VisualScripting;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 public class CharacterStats : MonoBehaviour, IGetHealthSystem
 {
     [SerializeField] int BaseStamina_PerLevel = 5;
@@ -12,20 +15,25 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
     [SerializeField] int StaminaConverseToHealth = 10;
     [SerializeField] float StaminaConverseToDamage = 1.25f;
     [SerializeField] TextMeshProUGUI StaminaText;
-    [SerializeField] TextMeshProUGUI HealthText;
+    [SerializeField] TextMeshProUGUI MaxHealthText;
+    [SerializeField] TextMeshProUGUI CurrentHealthText;
+    [SerializeField] TextMeshProUGUI gameOverText;
+    [SerializeField] Button restartButton;
     [SerializeField] TextMeshProUGUI DamageText;
     private HealthSystem healthSystem;
     private Animator animator;
     private int currentLevel;
+    EnemyNavMesh enemyNavMesh;
     CharacterController characterController;
     ThirdPersonController thirdPersonController;
     ThirdPersonShooterController thirdPersonShooterController;
-    // Định nghĩa một biến static để lưu thể hiện Singleton
+    GameManager gameManager;
+   //Singleton
     private static CharacterStats instance;
 
+   
 
 
-  
 
     // Khai báo các thông số và hành vi của nhân vật ở đây
 
@@ -55,11 +63,18 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
             return BaseStamina;
         }
     }
-    public int MaxHealthStat
+    public float MaxHealthStat
     {
         get
         {
             return Stamina * StaminaConverseToHealth;
+        }
+    }
+    public float CurrentHealthStat
+    {
+        get
+        {
+            return healthSystem.GetHealth();
         }
     }
     public int DamageStat
@@ -69,22 +84,34 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
             return (int)(Stamina * StaminaConverseToDamage);
         }
     }
-    
+
+
+    void Start()
+    {
+        RefreshUI();
+    }
     void Awake()
     {
-        BaseStamina = currentLevel * BaseStamina_PerLevel + BaseStamina_Offset;
+        if (!isBaseStaminaInitialized)
+        {
+            InitializeBaseStamina();
+            isBaseStaminaInitialized = true;
+        }
         healthSystem = new HealthSystem(MaxHealthStat);
         healthSystem.OnDead += HealthSystem_OnDead;
         healthSystem.OnDamaged += HealthSystem_OnDamaged;
-        
+
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         thirdPersonController = GetComponent<ThirdPersonController>();
+        enemyNavMesh = GetComponent<EnemyNavMesh>();
+        gameManager = GetComponent<GameManager>();
+        
     }
 
 
 
-   
+
     public void Damage(int damageAmount)
     {
         /*if (HP <= 0)
@@ -101,18 +128,22 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
         Debug.Log("Player Damaged");
     }
     // Start is called before the first frame update
-    
+
     // Update is called once per frame
     void Update()
     {
-        
+        RefreshUI();
     }
-    public void OnUpdateLevel()
-    {
 
-        StaminaText.text = $"Stamina: {Stamina}";
-        HealthText.text = $"Max Health: {MaxHealthStat}";
-        DamageText.text = $"Damage: {DamageStat}";
+    private bool isBaseStaminaInitialized = false;
+    public void OnUpdateLevel(int previousLevel, int currentLevel)
+    {
+        this.currentLevel = currentLevel; // Cập nhật currentLevel
+        InitializeBaseStamina();
+        RefreshUI();
+        // Cập nhật MaxHealthStat và DamageStat
+        
+        healthSystem.SetHealthMax(MaxHealthStat,true);
     }
     public HealthSystem GetHealthSystem()
     {
@@ -122,15 +153,40 @@ public class CharacterStats : MonoBehaviour, IGetHealthSystem
     {
         //animator.SetTrigger("Damaged");
         //HealthText.text = $"Max Health: {MaxHealthStat}";
-    }
-    
-    private void HealthSystem_OnDead(object sender, System.EventArgs e)
-    {
-            animator.SetTrigger("Die");
-            //transform.parent.position = base.transform.position;
-            thirdPersonController.enabled = false;
+        
     }
 
-    
+    private void HealthSystem_OnDead(object sender, System.EventArgs e)
+    {
+        gameOverText.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(true);
+        Debug.Log("Game Over");
+        StartCoroutine(RestartLevelAfterDelay(3f));
+        InputSystem.DisableAllEnabledActions();
+    }
+    private IEnumerator RestartLevelAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Restart Game");
+    }
+    void RefreshUI()
+    {
+        //StaminaText.text = $"Stamina: {Stamina}";
+        MaxHealthText.text = $"Max Health: {MaxHealthStat}";
+        DamageText.text = $"Damage: {DamageStat}";
+        CurrentHealthText.text = $"Current Health: {CurrentHealthStat}";
+
+    }
+    private void InitializeBaseStamina()
+    {
+        BaseStamina = currentLevel * BaseStamina_PerLevel + BaseStamina_Offset;
+    }
 }
-// đã làm xong ăn dame sẽ chết nhân vật, cần phải làm cái event để khi mất máu nó cập nhật máu lên thanh máu
+

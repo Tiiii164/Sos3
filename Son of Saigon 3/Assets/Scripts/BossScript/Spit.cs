@@ -46,7 +46,7 @@ namespace LlamAcademy
         
         
         [SerializeField]
-        private float AutoDestroyTime = 4f;
+        private float AutoDestroyTime = 2f;
 
         [SerializeField] private float Force = 100;
         

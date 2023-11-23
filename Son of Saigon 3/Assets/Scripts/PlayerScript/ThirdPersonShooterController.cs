@@ -10,7 +10,7 @@ public class ThirdPersonShooterController : MonoBehaviour
     // Get the VirtualCamera
     [SerializeField] public CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
-    [SerializeField] private float aimSensitivity;
+    [SerializeField] public float aimSensitivity;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
     [SerializeField] private Transform debugTransform;
     [SerializeField] private Transform rifeBulletPf;
@@ -72,6 +72,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public void Aimming()
     {
+        
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
         if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, aimColliderLayerMask))
         {

@@ -8,7 +8,7 @@ namespace CodeMonkey.HealthSystemCM
     public class EnemyNavMesh : MonoBehaviour, IGetHealthSystem
     {
         [SerializeField] int HP = 100;
-        [SerializeField] int DamageStat = 15;
+        [SerializeField] public int DamageStat = 15;
         public Animator animator;
         [SerializeField] XPTracker XPTracker;
         //private AudioSource enemyAudio;

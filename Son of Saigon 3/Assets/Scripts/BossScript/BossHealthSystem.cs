@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.HealthSystemCM;
+using TMPro;
+using UnityEngine.InputSystem;
 
 namespace CodeMonkey.HealthSystemCM
 {
@@ -9,6 +11,7 @@ namespace CodeMonkey.HealthSystemCM
     {
         [SerializeField] int HP = 10000;
         [SerializeField] int DamageStat = 15;
+        [SerializeField] TextMeshProUGUI winText;
         public Animator animator;
         [SerializeField] XPTracker XPTracker;
         //private AudioSource enemyAudio;
@@ -88,10 +91,11 @@ namespace CodeMonkey.HealthSystemCM
 
         private void HealthSystem_OnDead(object sender, System.EventArgs e)
         {
-            gameObject.GetComponent<BoxCollider>().enabled = false;
-            animator.SetTrigger("Die");
+            Debug.Log("Boss Died");
+            winText.gameObject.SetActive(true);
+            InputSystem.DisableAllEnabledActions();
             XPTracker.AddXP(HP/3);
-            Destroy(gameObject, 5);
+        
         }
 
         public HealthSystem GetHealthSystem()
