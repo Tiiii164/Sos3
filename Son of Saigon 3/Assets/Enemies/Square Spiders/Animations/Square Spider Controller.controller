@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc95207cb033584ead3f81da9007d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 3.5
+  patrolSpeed: 9
   chaseRange: 8
 --- !u!1102 &796341429293571994
 AnimatorState:
